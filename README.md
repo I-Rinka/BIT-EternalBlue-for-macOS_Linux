@@ -60,6 +60,6 @@ sudo -H python3 -m pip uninstall impacket
 ```
 
 ## Todo:
-- [] macOS Samba installation guide.
+- [ ] macOS Samba installation guide.
 
 A detailed process would be post in Chinese as my final assignment. If you understand Chinese, it would be fine for you. :)
